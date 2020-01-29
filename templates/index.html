@@ -3,7 +3,7 @@
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" href="{{url_for(filename=css/style.css')}}" type="text/css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
 </head>
 <body>
     <!-- landing page -->
@@ -23,7 +23,7 @@
             
             <div class='enter-button align center'>
                 <button class='btn waves-effect waves-light float-left green enter-btn' type='submit'>
-                    <a href='{{ url_for('view_recipe') }}' class='enter-btn' type='submit' value='enter'>View Recipes</a>
+                    <a href="{{ url_for('  ')}}" class='enter-btn' type='submit' value='enter'>View Recipes</a>
                 </button>
                 </div>
         </div>
