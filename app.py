@@ -6,19 +6,18 @@ from bson.objectid import ObjectId
 
 app = Flask(__name__)
 app.config['MONGO_DBNAME'] = 'recipe_manager'
-app.config['MONGO_uri'] = 'mongodb+srv://Cat:Kot@myfirstcluster-tlipu.mongodb.net/recipe_manager?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = 'mongodb+srv://Cat:Kot@myfirstcluster-tlipu.mongodb.net/recipe_manager?retryWrites=true&w=majority'
 
 mongo = PyMongo(app)
 
 @app.route('/')
-
 @app.route('/index')
 def index():
     return render_template('index.html')
-    
+
     
     
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
-    port=(os.environ.get('PORT')),
+    port=int(os.environ.get('PORT')),
     debug=True)
