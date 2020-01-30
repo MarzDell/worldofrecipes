@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="{{url_for('index')}}" class="brand-logo">World of Recipes</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+               
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{url_for('')}}">Home</a></li>
+                    <li><a href="{{url_for('')}}">Add Recipe</a></li>
+                    <li><a href="{{url_for('')}}">Statistic</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="{{url_for('')}}">Home</a></li>
+                    <li><a href="{{url_for('')}}">Add Recipe</a></li>
+                    <li><a href="{{url_for('')}}">Statistic</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+    <div class='container'>
+            {% block content %}
+            {% endblock %}
+    </div>
+    <footer class="container-fluid ">
+            <div class="row ">
+                <div class="col-sm-4 ">
+                    <h6 class="general about">About Us</h6>
+                    <p class="inline-block ">
+                        We are collecting Recipes from all around the World.
+                    </p>
+                </div>
+                <div class="col-sm-4 ">
+                    <h6 class="general copyright">World of Recipes Ltd</h6>
+                    <p class="inline-block">
+                        &copy; Copyright 2020
+                    </p>
+                </div>
+                <div class="col-sm-4 ">
+                    <h6 class="general social">Let's Socialise</h6>
+                    <ul class="list-inline social-links ">
+                        <li><a target="_blank" href="# "><i class="fa fa-facebook "></i></a></li>
+                        <li><a target="_blank" href="# "><i class="fa fa-twitter "></i></a></li>
+                        <li><a target="_blank" href="# "><i class="fa fa-instagram "></i></a></li>
+                        <li><a target="_blank" href="# "><i class="fa fa-youtube "></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+            crossorigin="anonymous"></script>
+            <script type="text/javascript">
+    $(document).ready(function () {
+      $(".button-collapse").sideNav();
+      $(".modal").modal();
+    });
+  </script>
+</body>
+</html>
