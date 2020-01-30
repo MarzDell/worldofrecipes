@@ -6,24 +6,24 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
-    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" type="text/css" />
 </head>
 <body>
     <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="{{url_for('index')}}" class="brand-logo">World of Recipes</a>
+                <a href="{{ url_for('index') }}" class="brand-logo">World of Recipes</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="{{url_for('')}}">Home</a></li>
-                    <li><a href="{{url_for('')}}">Add Recipe</a></li>
-                    <li><a href="{{url_for('')}}">Statistic</a></li>
+                    <li><a href="{{ url_for('view_recipe') }}">Home</a></li>
+                    <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
+                    <li><a href="{{ url_for('stat') }}">Statistic</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="{{url_for('')}}">Home</a></li>
-                    <li><a href="{{url_for('')}}">Add Recipe</a></li>
-                    <li><a href="{{url_for('')}}">Statistic</a></li>
+                    <li><a href="{{ url_for('view_recipe') }}">Home</a></li>
+                    <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
+                    <li><a href="{{ url_for('stat') }}">Statistic</a></li>
                 </ul>
                 
             </div>
