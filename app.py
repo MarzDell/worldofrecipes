@@ -26,7 +26,16 @@ def index():
 def view_recipe():
     records = list(mongo.db.recipes.find())
     return render_template('view.html', recipes=records)
-  
+
+@app.route('/view_specific/<recipe_id>', methods=['GET', 'POST'])
+def view_specific():
+    mongo.db.recipes.update({'_id': ObjectId(recipe_id)},
+                            {'$inc': {'views': 1}})
+    the_recipe = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
+    all_categories = mongo.db.categories.find()
+    return render_template('individual_recipe.html',
+                            recipe=the_recipe, categories=all_categories)
+ 
 @app.route('/add_recipe')
 def add_recipe():
     return render_template('insert.html',
@@ -46,6 +55,13 @@ def search():
     find = {'$text': {'$search':title}}
     results = mongo.db.recipes.find(find)
     return render_template('view.html', recipes=results, count=results.count())
+
+@app.route('/count/<recipe_id>', methods=['GET', 'POST'])
+def count():
+    count = mongo.db.recipes.find({'_id': ObjectId(recipe_id)})
+    mongo.db.recipes.update({'_id': ObjectId(recipe_id)},
+                            {'$inc':{'view': 1}})
+    return render_template('view.html', recipe=count)
 
 @app.route('/stat')
 def stat():
