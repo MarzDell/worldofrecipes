@@ -1,6 +1,27 @@
 {% extends 'base.html' %} {% block content %}
 
+<div class='container'>
+    <div class='header'>
+        <strong>Recipes of The World</strong>
+        <p>See the biggest collection of recipes, you can choose for yourself anything you wish!</p>
+        <p>Breakfast, Lunch, Dinner and Dessert thats our categories</p>
+    </div>
+</div>
 
+<div class='search-wrapper'>
+    <div class='row search-input'>
+        <div class='col-md-12'>
+            <form action="{{ url_for('search') }}"method='POST'>
+                <div class='input-field'>
+                    <input id='search' name='search' placeholder='What would you like to cook today?' required>
+                    <div class='center-align'>
+                        <button class='btn waves-effect waves-light light-blue' type='submit'>Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 
 
 {% endblock %}

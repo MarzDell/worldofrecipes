@@ -40,6 +40,12 @@ def insert():
     recipes.insert_one(payload)
     return redirect(url_for('view_recipe'))
 
+@app.route('/search', methods=['GET', 'POST'])
+def search():
+    title = request.form.get('search')
+    find = {'$text': {'$search':title}}
+    results = mongo.db.recipes.find(find)
+    return render_template('view.html', recipes=results, count=results.count())
 
 @app.route('/stat')
 def stat():
