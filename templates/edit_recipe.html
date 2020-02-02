@@ -1,71 +1,77 @@
 {% extends 'base.html' %} {% block content %}
 
-
-<div class="container">
-    <div class="row">
-        <h1 class="col s12 center-align" style="margin-top: 100px;">Add Recipe</h1><br><br><br>
-        <div class="row">
-            <form action="{{ url_for('insert') }}" method="POST" class="col s12">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <i class="material-icons prefix">restaurant_menu</i>
-                        <input id="categories" name="categories" type="text" class="validate">
+<div class='container'>
+    <div class='row'>
+        <h1 class='col-md-12 center-align'>Edit Recipe</h1><br><br>
+        <h3 class='col-md-12 center-align'>{{ recipe.title }}</h3><br><br>
+        <div class='row'>
+            <form action="{{ url_for('insert', recipe_id=recipe._id)}}" method='POST' class='col- s12'>
+                <div class='row'>
+                    <div class='input-field col s12'>
+                        <i class='material-icons prefix'>restaurant_menu</i>
+                        <input id="categories" name="categories" value='{{ recipe.categories }}' type="text" class="validate">
                         <label>Category:</label>
                     </div>
                 </div>
-                <div class="row">
+                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">title</i>
-                        <input id="title" name="title" type="text" class="validate">
+                        <input id="title" name="title" type="text" class="validate" value='{{ recipe.title }}'>
                         <label>Title:</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">add_shopping_cart</i>
-                        <textarea type="textarea" name="ingredients" id="ingredients" type="text"
-                            class="materialize-textarea"></textarea>
+                       <textarea rows="1" cols="40" onfocus="this.rows=20;" onblur="this.rows=1;" style="resize: none;"
+                            name="ingredients" id="ingredients"
+                            class="materialize-textarea">{{ recipe.ingredients }}</textarea>
                         <label>Ingredients:</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <i class="material-icons prefix">description</i>
-                        <textarea type="textarea" name="method" id="method" type="text"
-                            class="materialize-textarea"></textarea>
+                        <textarea rows="1" cols="40" onfocus="this.rows=20;" onblur="this.rows=1;" style="resize: none;"
+                            name="method" id="method" class="materialize-textarea">{{ recipe.method }}</textarea>
                         <label>Method:</label>
                     </div>
                 </div>
                 <div class="input-field col s6">
                     <i class="material-icons prefix">poll</i>
-                    <input name="nutrition" id="nutrition" type="text" class="validate">
+                    <input name="nutrition" id="nutrition" type="text" class="validate" value="{{ recipe.nutrition }}">
                     <label>Nutrition:</label>
                 </div>
                 <div class="input-field col s6">
                     <i class="material-icons prefix">access_time</i>
-                    <input name="time" id="time" type="text" class="validate">
+                    <input name="time" id="time" type="text" class="validate" value="{{ recipe.time }}">
                     <label>Cooking time:</label>
                 </div>
                 <div class="input-field col s6">
                     <i class="material-icons prefix">account_box</i>
-                    <input id="author" name="author" type="text" class="validate">
+                    <input id="author" name="author" type="text" class="validate" value="{{ recipe.author }}">
                     <label>Author:</label>
                 </div>
                 <div class="input-field col s6">
                     <i class="material-icons prefix">camera_alt</i>
-                    <input id="img" name="img" type="url" class="validate">
+                    <input id="img" name="img" type="url" class="validate" value="{{ recipe.img }}">
                     <label>Insert image URL:</label>
                 </div>
                 <div class="input_field col s12">
                     <div class="row"><br><br><br><br>
-                        <button class="btn waves-effect waves-light sml_button accent-3" type="submit">Add Recipe
+                        <button class="btn waves-effect waves-light sml_button accent-3" type="submit">Update Recipe
 
                             <i class="material-icons right">send</i>
                         </button>
-                    </div>
-                </div>
+                        </div>
+                        </div
             </form>
         </div>
     </div>
 </div>
+
+
+
+
+
 {% endblock %}

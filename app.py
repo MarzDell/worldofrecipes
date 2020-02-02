@@ -28,7 +28,7 @@ def view_recipe():
     return render_template('view.html', recipes=records)
 
 @app.route('/view_specific/<recipe_id>', methods=['GET', 'POST'])
-def view_specific():
+def view_specific(recipe_id):
     mongo.db.recipes.update({'_id': ObjectId(recipe_id)},
                             {'$inc': {'views': 1}})
     the_recipe = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
@@ -48,7 +48,37 @@ def insert():
     payload.update({'views': 0})
     recipes.insert_one(payload)
     return redirect(url_for('view_recipe'))
+    
+    
+@app.route('/edit/<recipe_id>', methods=['GET', 'POST'])
+def edit(recipe_id):
+    the_recipe = mongo.db.recipes.find_one
+    ({"_id": ObjectId(recipe_id)})
+    all_categories = mongo.db.categories.find()
+    return render_template('edit_recipe.html', recipe=the_recipe, categories=all_categories)
 
+@app.route('/update/<recipe_id>', methods=['POST'])
+def update(recipe_id):
+    recipes = mongo.db.recipes
+    recipes.update({"_id": ObjectId(recipe_id)}, {
+        "img": request.form.get('img'),
+        "categories": request.form.get('categories'),
+        "title": request.form.get('title'),
+        "ingredients": request.form.get('ingredients'),
+        "method": request.form.get('method'),
+        "nutrition": request.form.get('nutrition'),
+        "time": request.form.get('time'),
+        "author": request.form.get('author'),
+    })
+    return redirect( url_for('view_recipe'))
+    
+    
+@app.route('/delete/<recipe_id>')
+def delete(recipe_id):
+    mongo.db.recipes.delete_one({ "_id":ObjectId(recipe_id)})
+    return redirect( url_for('view_recipe'))
+    
+    
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     title = request.form.get('search')
