@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Roboto:100,200,300,400,500,600,700');
+
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto' , sans-serif;
+}
+
+/***Landing Page***/
+
+.background-container {
+    background-image: url('https://newsroom.pinterest.com/sites/default/files/inline-images/Pinterest-100-c-blog-food_0.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f0f8ff;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+    width: 100%;
+    
+}
+
+.header-landing {
+    margin-top: 150px;
+    font-size: 100px;
+    color: black;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.enter-button {
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 80px;
+    background-color: transparent;
+    
+}
+.btn {
+    background-color: #DAA520;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+a {
+    color: black;    
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+/*** Nav***/
+
+.nav-wrapper {
+    background-color: #f0f8ff;
+}
+
+nav .brand-logo,
+nav ul a {
+    color:black;
+}
+
+nav .brand-logo:hover ,
+nav ul a:hover {
+    color: #DAA520;
+}
+
+
+/*** Home Page***/
+.header {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 50px;
+}
+
+strong {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+#search {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#search: after{
+    background-color: transparent;
+}
+
+.view{
+    margin-top:20px;
+    
+}
+/*** Footer***/
+footer {
+    background-color: #f0f8ff;
+    margin: 0 auto;
+    position: absolute;
+    margin-top: 30px;
+    padding-top: 25px;
+}
+
+.col-sm-4 {
+    text-align: center;
+}
+
+.fa {
+    font-size: 30px;
+}
+
+.col-sm-4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+li {
+    display: inline-block;
+}
+.fa:hover {
+    color: #DAA520;
+}
