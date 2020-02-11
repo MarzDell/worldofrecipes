@@ -1,0 +1,69 @@
+{% extends 'base.html' %} {% block content %}
+
+
+<div class='jumbotron text-center'>
+    <div class='container'>
+        <div class='jumbo-header'><strong>World of Recipes</strong></div>
+        <br>
+        <br>
+        <h2>Here you can find diagram with the most popular categories from today search</h2>
+        <p>**This page is just for display, it is not wired up to use any date from the website</p>
+    </div>
+</div>
+
+<div id='container'></div>
+
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script type="text/javascript">
+    Highcharts.chart('container', {
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false,
+            type: 'pie'
+        },
+        title: {
+            text: 'Most recent research in our categories'
+        },
+        tooltip: {
+            pointFormat:'{series.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enable: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %'
+                }
+            }
+        },
+        series: [{
+            name: 'Categories',
+            colorByPoint: true,
+            data: [{
+                name: 'Dinner',
+                y: 36.10,
+                sliced: true,
+                selected: true
+            }, {
+                name: 'Breakfast',
+                y: 27.40
+            }, {
+                name: 'Lunch',
+                y: 23.90
+            }, {
+                name: 'Dessert',
+                y: 12.60
+            }]
+        }]
+        
+    });
+ </script>
+ 
+ 
+ 
+{% endblock %}
