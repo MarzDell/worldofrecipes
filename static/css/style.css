@@ -72,10 +72,17 @@ nav ul a:hover {
     color: #DAA520;
 }
 
+nav a  {
+    color: black;
+}
+
 #sidenav-overlay {
   z-index: 996;
 }
 
+.side-nav li {
+    display: block;
+}
 /*** Home Page***/
 .header {
     text-align: center;
@@ -170,7 +177,15 @@ li {
 
 /***Media Queries***/
 
-@media (max-width: 600px) {
-    
-}
-
+ @media (max-width: 768px) {
+       nav .brand-logo {
+           font-size: 15px;
+       }
+       .jumbo-header {
+           font-size: 50px;
+           margin-top: 0px;
+       }
+       #search {
+         font-size: 10px;
+       }
+   }
