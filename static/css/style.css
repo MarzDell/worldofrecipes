@@ -105,6 +105,30 @@ strong {
     
 }
 
+
+/***Shop Page***/
+
+.background-container-shop {
+    background-image: url('https://cdn.dribbble.com/users/2918596/screenshots/6200802/isometric_online_shopping_light_grain.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #f0f8ff;
+    height: -webkit-fill-available;
+    height: -moz-available;
+    height: fill-available;
+    width: 100%;
+}
+
+
+.shop {
+    color: #DAA520;
+    text-align: center;
+    text-shadow: 2px 2px black;
+}
+    
+    
 /***Statistic Page***/
 
 .jumbotron {
@@ -138,3 +162,7 @@ li {
 .fa:hover {
     color: #DAA520;
 }
+
+
+
+/***Media Queries***/

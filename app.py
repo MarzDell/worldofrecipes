@@ -21,6 +21,10 @@ mongo.db.recipes.create_index([('$**', 'text')])
 @app.route('/index')
 def index():
     return render_template('index.html')
+    
+@app.route('/shop')
+def shop():
+    return render_template('shop.html')
 
 @app.route('/view_recipe')
 def view_recipe():
