@@ -104,6 +104,13 @@ strong {
     margin-top:20px;
     
 }
+
+/***Statistic Page***/
+
+.jumbotron {
+    margin-top: 20px;
+}
+
 /*** Footer***/
 footer {
     background-color: #f0f8ff;
