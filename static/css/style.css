@@ -72,6 +72,9 @@ nav ul a:hover {
     color: #DAA520;
 }
 
+#sidenav-overlay {
+  z-index: 996;
+}
 
 /*** Home Page***/
 .header {
@@ -166,3 +169,8 @@ li {
 
 
 /***Media Queries***/
+
+@media (max-width: 600px) {
+    
+}
+

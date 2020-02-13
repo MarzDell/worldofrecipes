@@ -10,21 +10,26 @@
 </head>
 <body>
     <header>
+        <div class='navbar-fixed'>
         <nav>
             <div class="nav-wrapper">
                 <a href="{{ url_for('index') }}" class="brand-logo">World of Recipes</a>
-
-               
-              <ul id="nav" class="right">
+                <a href='#' data-activates='mobile-demo' class='button-collapse'><i class='material-icons'>menu</i></a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="{{ url_for('view_recipe') }}">Home</a></li>
                     <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
                     <li><a href="{{ url_for('shop') }}">Shop</a></li>
                     <li><a href="{{ url_for('stat') }}">Statistic</a></li>
                 </ul>
-             
-                
+                <ul class='side-nav' id='mobile-demo'>
+                    <li><a href="{{ url_for('view_recipe') }}">Home</a></li>
+                    <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
+                    <li><a href="{{ url_for('shop') }}">Shop</a></li>
+                    <li><a href="{{ url_for('stat') }}">Statistic</a></li>
+                </ul>
             </div>
         </nav>
+        </div>
     </header>
     <div class='container'>
             {% block content %}
@@ -62,6 +67,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
             crossorigin="anonymous"></script>
+    <script type='text/javascript'>
+        $(document).ready(function () {
+            $('.button-collapse').sideNav();
+            $('.modal').modal();
+        });
+    </script>
 
 </body>
 </html>
