@@ -28,7 +28,7 @@
         {% for recipe in recipes %}
         <div class='col-xs-12 col-md-4'>
             <a href="{{ url_for('view_specific', recipe_id=recipe._id) }}">
-                <img style='height: 350px; width:100%; border: solid 5px #ddd; margin-top: 30px;'
+                <img style='height: 150px; width:100%; border: solid 5px #ddd; margin-top: 30px;'
                 src='{{ recipe.img }}' alt='Image'>
             </a>
             <br>
