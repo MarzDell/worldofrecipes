@@ -73,27 +73,27 @@ Wireframes were made using [Moqups](https://moqups.com).
 
 - #### Desktop Wireframes
     
-        -[Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/landing-page.png)
-        -[Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/home-page.png)
-        -[Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/add-recipe-page.png)
-        -[Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/shop-page.png)
-        -[Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/statistic-page.png)
+    -[Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/landing-page.png)
+    -[Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/home-page.png)
+    -[Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/add-recipe-page.png)
+    -[Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/shop-page.png)
+    -[Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/statistic-page.png)
 
 - #### Tablet Wireframes
     
-        -[Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/landing-page-tablet.png)
-        -[Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/home-page-tablet.png)
-        -[Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/add-recipe-page-tablet.png)
-        -[Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/shop-page-tablet.png)
-        -[Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/statistic-page-tablet.png)
+    -[Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/landing-page-tablet.png)
+    -[Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/home-page-tablet.png)
+    -[Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/add-recipe-page-tablet.png)
+    -[Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/shop-page-tablet.png)
+    -[Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/statistic-page-tablet.png)
 
 - #### Mobile Wireframes
     
-        -[Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/landing-page-mobile.png)
-        -[Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/home-page-mobile.png)
-        -[Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/add-recipe-page-mobile.png)
-        -[Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/shop-page-mobile.png)
-        -[Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/statistic-page-mobile.png)
+    -[Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/landing-page-mobile.png)
+    -[Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/home-page-mobile.png)
+    -[Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/add-recipe-page-mobile.png)
+    -[Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/shop-page-mobile.png)
+    -[Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/statistic-page-mobile.png)
 
 ## Features
 
@@ -213,8 +213,7 @@ in the 'Responsive' setting.
 
 I checked that:
 
-    - All the links are working correctly and the page does not show any error.
-    - I added, edit, update and delete many recipes to check the performance of all of the function and if it is transport to MongoDB.
+ All the links are working correctly and the page does not show any error. I added, edit, update and delete many recipes to check the performance of all of the function and if it is transport to MongoDB.
     
 ## Deployments
 
