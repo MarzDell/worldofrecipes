@@ -18,19 +18,25 @@ categories = mongo.db.categories
 
 mongo.db.recipes.create_index([('$**', 'text')])
 
+
 @app.route('/')
+
+
 @app.route('/index')
 def index():
     return render_template('index.html')
-    
+ 
+ 
 @app.route('/shop')
 def shop():
     return render_template('shop.html')
+
 
 @app.route('/view_recipe')
 def view_recipe():
     records = list(mongo.db.recipes.find())
     return render_template('view.html', recipes=records)
+
 
 @app.route('/view_specific/<recipe_id>', methods=['GET', 'POST'])
 def view_specific(recipe_id):
@@ -40,11 +46,13 @@ def view_specific(recipe_id):
     all_categories = mongo.db.categories.find()
     return render_template('individual_recipe.html',
                             recipe=the_recipe, categories=all_categories)
- 
+
+
 @app.route('/add_recipe')
 def add_recipe():
     return render_template('insert.html',
                            categories=mongo.db.categories.find())
+
 
 @app.route('/insert', methods=['POST'])
 def insert():
@@ -62,6 +70,7 @@ def edit(recipe_id):
     all_categories = mongo.db.categories.find()
     return render_template('edit_recipe.html', recipe=the_recipe, categories=all_categories)
 
+
 @app.route('/update/<recipe_id>', methods=['POST'])
 def update(recipe_id):
     recipes = mongo.db.recipes
@@ -75,34 +84,35 @@ def update(recipe_id):
         "time": request.form.get('time'),
         "author": request.form.get('author'),
     })
-    return redirect( url_for('view_recipe'))
+    return redirect(url_for('view_recipe'))
     
     
 @app.route('/delete/<recipe_id>')
 def delete(recipe_id):
-    mongo.db.recipes.delete_one({ "_id":ObjectId(recipe_id)})
-    return redirect( url_for('view_recipe'))
+    mongo.db.recipes.delete_one({"_id": ObjectId(recipe_id)})
+    return redirect(url_for('view_recipe'))
     
     
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     title = request.form.get('search')
-    find = {'$text': {'$search':title}}
+    find = {'$text': {'$search': title}}
     results = mongo.db.recipes.find(find)
     return render_template('view.html', recipes=results, count=results.count())
+
 
 @app.route('/count/<recipe_id>', methods=['GET', 'POST'])
 def count():
     count = mongo.db.recipes.find({'_id': ObjectId(recipe_id)})
     mongo.db.recipes.update({'_id': ObjectId(recipe_id)},
-                            {'$inc':{'view': 1}})
+                            {'$inc': {'view': 1}})
     return render_template('view.html', recipe=count)
+
 
 @app.route('/stat')
 def stat():
-    return render_template('statistic.html')
-    
-if __name__ == "__main__":
-    app.run(host=os.environ.get('IP'),
-    port=int(os.environ.get('PORT')),
-    debug=True)
+    return render_template('statistic.html')   
+if __name__ == "__main__": 
+                app.run(host=os.environ.get('IP'), 
+                port=int(os.environ.get('PORT')), 
+                debug=True)
