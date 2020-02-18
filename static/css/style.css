@@ -188,7 +188,7 @@ li {
 
 /***Media Queries***/
 
- @media (max-width: 768px) {
+@media (max-width: 768px) {
         nav .brand-logo {
            font-size: 20px;
        }
@@ -200,14 +200,14 @@ li {
          font-size: 10px;
        }
        .header-landing {
-           font-size: 100px;
+           font-size: 80px;
        }
        .input-field
        .prefix ~ input{
            padding-bottom: 10px;
        }
-       button .btn {
-           font-size: 25px;
+       .btn {
+           font-size: 15px;
        }
        nav .button-collapse i {
            font-size: 20px;
