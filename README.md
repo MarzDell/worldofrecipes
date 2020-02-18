@@ -14,13 +14,13 @@ people who loves cooking can use the website for any ideas, to add their very ow
 ## Contents Table
 
 1. [**UX**](#ux)
-    -[**Project Purpose**](#project-purpose)
-    -[**Design**](#design)
-    -[**Wireframes**](#wireframes)
+    - [**Project Purpose**](#project-purpose)
+    - [**Design**](#design)
+    - [**Wireframes**](#wireframes)
 
 2. [**Features**](#features)
-    -[**Existing Features**](#existing-features)
-    -[**Features to implement**](#features-to-implement)
+    - [**Existing Features**](#existing-features)
+    - [**Features to implement**](#features-to-implement)
 
 3. [**Technologies Used**](technologies-used)
 
@@ -29,10 +29,10 @@ people who loves cooking can use the website for any ideas, to add their very ow
 5. [**Deployments**](#deployments)
 
 6.  [**Credits**](#credits)
-    -[**Contents**](#contents)
-    -[**Images**](#images)
-    -[**Help with code**](#help-with-code)
-    -[**Acknowledgements**](#acknowledgements)
+    - [**Contents**](#contents)
+    - [**Images**](#images)
+    - [**Help with code**](#help-with-code)
+    - [**Acknowledgements**](#acknowledgements)
 
 ## UX
 
@@ -65,7 +65,7 @@ The design of the page is simple and easy to move around, it is intuitive as wel
     
 - #### Website Pictures
 
-    All images have been chosen to match and have been downloaded from Pinteres.
+All images have been chosen to match and have been downloaded from Pinteres.
     
 ### Wireframes
 
@@ -73,27 +73,27 @@ Wireframes were made using [Moqups](https://moqups.com).
 
 - #### Desktop Wireframes
     
-    -[Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/landing-page.png),
-    -[Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/home-page.png),
-    -[Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/add-recipe-page.png),
-    -[Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/shop-page.png),
-    -[Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/statistic-page.png),
+    - [Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/landing-page.png),
+    - [Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/home-page.png),
+    - [Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/add-recipe-page.png),
+    - [Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/shop-page.png),
+    - [Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/desktop/statistic-page.png),
 
 - #### Tablet Wireframes
     
-    -[Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/landing-page-tablet.png),
-    -[Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/home-page-tablet.png),
-    -[Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/add-recipe-page-tablet.png),
-    -[Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/shop-page-tablet.png),
-    -[Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/statistic-page-tablet.png)
+    - [Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/landing-page-tablet.png),
+    - [Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/home-page-tablet.png),
+    - [Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/add-recipe-page-tablet.png),
+    - [Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/shop-page-tablet.png),
+    - [Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/tablet/statistic-page-tablet.png)
 
 - #### Mobile Wireframes
     
-    -[Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/landing-page-mobile.png),
-    -[Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/home-page-mobile.png),
-    -[Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/add-recipe-page-mobile.png),
-    -[Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/shop-page-mobile.png),
-    -[Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/statistic-page-mobile.png)
+    - [Landing Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/landing-page-mobile.png),
+    - [Home Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/home-page-mobile.png),
+    - [Add Recipe Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/add-recipe-page-mobile.png),
+    - [Shop Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/shop-page-mobile.png),
+    - [Statistic Page](https://github.com/MarzDell/worldofrecipes/blob/master/UX/skeleton-plane/wireframes/mobile/statistic-page-mobile.png)
 
 ## Features
 
@@ -226,20 +226,20 @@ A Procfile is required, it is a text file named 'Procfile' placed in the root of
 
 ### Contents
 
-- All Content has been thought of and written by the Developer. 
+All Content has been thought of and written by the Developer. 
 
 
 ### Images
 
--Images were downloaded from the webpage [Pinterest](https://www.pinterest.co.uk/).
+Images were downloaded from the webpage [Pinterest](https://www.pinterest.co.uk/).
   
 
 ### Help with code
 
 - Ideas on how to start with my project a took from youtuber that I follow: [Traversy Media](https://www.youtube.com/user/TechGuyWeb)
 - I use help as well from:
-    -Website about tutorial[Python3](https://www.tutorialspoint.com/python3/index.htm)
-    -Tutorials about [MongoDB](https://www.guru99.com/mongodb-tutorials.html)
+    - Website about tutorial [Python3](https://www.tutorialspoint.com/python3/index.htm)
+    - Tutorials about [MongoDB](https://www.guru99.com/mongodb-tutorials.html)
 
 ### Acknowledgements
 
