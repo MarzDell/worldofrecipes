@@ -189,8 +189,8 @@ li {
 /***Media Queries***/
 
  @media (max-width: 768px) {
-       nav .brand-logo {
-           font-size: 25px;
+        nav .brand-logo {
+           font-size: 20px;
        }
        .jumbo-header {
            font-size: 50px;
@@ -206,7 +206,13 @@ li {
        .prefix ~ input{
            padding-bottom: 10px;
        }
-       .btn {
+       button .btn {
+           font-size: 25px;
+       }
+       nav .button-collapse i {
            font-size: 20px;
        }
+        .side-nav li>a {
+            font-size: 20px;
+        }
    }
