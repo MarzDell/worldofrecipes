@@ -118,8 +118,10 @@ strong {
     margin-top: 20px;
 }
 
-img {
-    height: 100% !important;
+#img_responsive {
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
 }
 
 
