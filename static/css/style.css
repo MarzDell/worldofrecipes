@@ -5,12 +5,11 @@ body {
     background-color: white;
     margin: 0px;
     padding: 0px;
-    font-family: 'Playfair Display' , sans-serif;
+    font-family: 'Playfair Display', sans-serif;
 }
 
 
 /***Landing Page***/
-
 
 .background-container {
     background-image: url('https://newsroom.pinterest.com/sites/default/files/inline-images/Pinterest-100-c-blog-food_0.jpg');
@@ -49,7 +48,7 @@ body {
 }
 
 a {
-    color: black;    
+    color: black;
 }
 
 a:hover {
@@ -60,27 +59,26 @@ a:hover {
 
 /*** Nav***/
 
-
 .nav-wrapper {
     background-color: #f0f8ff;
 }
 
 nav .brand-logo,
 nav ul a {
-    color:black;
+    color: black;
 }
 
-nav .brand-logo:hover ,
+nav .brand-logo:hover,
 nav ul a:hover {
     color: #DAA520;
 }
 
-nav a  {
+nav a {
     color: black;
 }
 
 #sidenav-overlay {
-  z-index: 996;
+    z-index: 996;
 }
 
 .side-nav li {
@@ -89,7 +87,6 @@ nav a  {
 
 
 /*** Home Page***/
-
 
 .header {
     text-align: center;
@@ -113,17 +110,16 @@ strong {
     margin-bottom: 15px;
 }
 
-#search: after{
+#search: after {
     background-color: transparent;
 }
 
-.view{
-    margin-top:20px;
+.view {
+    margin-top: 20px;
 }
 
 
 /***Shop Page***/
-
 
 .background-container-shop {
     background-image: url('https://cdn.dribbble.com/users/2918596/screenshots/6200802/isometric_online_shopping_light_grain.jpg');
@@ -143,10 +139,9 @@ strong {
     text-align: center;
     text-shadow: 2px 2px black;
 }
-    
-    
-/***Statistic Page***/
 
+
+/***Statistic Page***/
 
 .jumbotron {
     margin-top: 20px;
@@ -154,7 +149,6 @@ strong {
 
 
 /*** Footer***/
-
 
 footer {
     background-color: #f0f8ff;
@@ -189,30 +183,29 @@ li {
 /***Media Queries***/
 
 @media (max-width: 768px) {
-        nav .brand-logo {
-           font-size: 20px;
-       }
-       .jumbo-header {
-           font-size: 50px;
-           margin-top: 0px;
-       }
-       #search {
-         font-size: 10px;
-       }
-       .header-landing {
-           font-size: 80px;
-       }
-       .input-field
-       .prefix ~ input{
-           padding-bottom: 10px;
-       }
-       .btn {
-           font-size: 15px;
-       }
-       nav .button-collapse i {
-           font-size: 20px;
-       }
-        .side-nav li>a {
-            font-size: 20px;
-        }
-   }
+    nav .brand-logo {
+        font-size: 20px;
+    }
+    .jumbo-header {
+        font-size: 50px;
+        margin-top: 0px;
+    }
+    #search {
+        font-size: 10px;
+    }
+    .header-landing {
+        font-size: 80px;
+    }
+    .input-field .prefix~input {
+        padding-bottom: 10px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+    nav .button-collapse i {
+        font-size: 20px;
+    }
+    .side-nav li>a {
+        font-size: 20px;
+    }
+}

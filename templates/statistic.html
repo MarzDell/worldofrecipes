@@ -18,7 +18,6 @@
 <script src="https://code.highcharts.com/modules/exporting.js"></script>
 <script src="https://code.highcharts.com/modules/export-data.js"></script>
 <script type="text/javascript">
-
     Highcharts.chart('container', {
         chart: {
             plotBackgroundColor: null,
@@ -30,7 +29,7 @@
             text: 'Most recent research in our categories'
         },
         tooltip: {
-            pointFormat:'{series.name}: <b>{point.percentage:.1f}%</b>'
+            pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         },
         plotOptions: {
             pie: {
@@ -61,10 +60,10 @@
                 y: 12.60
             }]
         }]
-        
+
     });
- </script>
- 
- 
- 
+</script>
+
+
+
 {% endblock %}
