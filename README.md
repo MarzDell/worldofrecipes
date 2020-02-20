@@ -5,7 +5,7 @@ Data Centric Development - Milestone Project 3 -World of Recipes -Marzena Chodni
 <div align='center'>
 
 [World of Recipes](https://worldofrecipes.herokuapp.com/) is a website where you can get recipes from over the world, 
-people who loves cooking can use the website for any ideas, to add their very own collection of recipes or to inspire other users! There is always something good for everyone tast!
+people who loves cooking can use the website for any ideas, to add their very own collection of recipes or to inspire other users! There is always something good for everyone taste!
 <br><br>
 [**View World of recipes website here**](https://worldofrecipes.herokuapp.com/),
 [**View Website Development in Github here**](https://github.com/MarzDell/worldofrecipes)
@@ -38,7 +38,7 @@ people who loves cooking can use the website for any ideas, to add their very ow
 
 ### Project Purpose
 
-The main goal of World Of Recipes is to make perfect place for users to get their own recpies in one place and share the love of cooking.
+The main goal of World Of Recipes is to make perfect place for users to get their own recipes in one place and share the love of cooking.
 
 ### Design
 
@@ -51,9 +51,9 @@ The design of the page is simple and easy to move around, it is intuitive as wel
 - #### Colours
     
     - **All Pages -** A white background was chosen to keep good looking design.
-    - **Buttons -** Colours of the button has been chosen to merge into background picter on landing page and give amazing appearance. 
+    - **Buttons -** Colours of the button has been chosen to merge into background picture on landing page and give amazing appearance. 
                     Style of the buttons on other pages were followed the same as on landing page.
-    - **Links -** An orange colour was chosen once hovering to match the colour of the button and make conection of styles on the website.
+    - **Links -** An orange colour was chosen once hovering to match the colour of the button and make connection of styles on the website.
     - **Social Links -** A black colour was chosen as a good contrast between the background, an orange was chosen once hovering to match links and button colours.
     - **Pictures -** All theme of pictures were chosen in the same style to make nice and good connection between pages.
     
@@ -105,12 +105,12 @@ Wireframes were made using [Moqups](https://moqups.com).
     
 2. #### Search function
 
-    On Home page you can find search function where the user can type in a keyword  to find category of recipes. It is created to save them some time and make it simple.
+    On Home page you can find search function where the user can type in a keyword to find category of recipes. It is created to save them some time and make it simple.
     
 3. #### Individual Recipe
 
-    It is displayed under search function in card styled container, user can click picture or hyperlink to chose the specific recipe and will be moved automatically to another page where 
-    the recipe will be displayd in full details. As well I added view counter which show how many times was seen by users as a individual recipe.
+    It is displayed under search function in card styled container, user can click picture or hyperlink to choose the specific recipe and will be moved automatically to another page where 
+    the recipe will be displayed in full details. As well I added view counter which show how many times was seen by users as a individual recipe.
     
 4. #### Edit Recipe
 
@@ -147,7 +147,7 @@ Wireframes were made using [Moqups](https://moqups.com).
 
 3. #### Statistic Page 
 
-    Statistic Page will be in use of real data once Sign up account will be created. The page will collect all the datas from the website and will display variation of diagrams 
+    Statistic Page will be in use of real data once Sign up account will be created. The page will collect all the data from the website and will display variation of diagrams 
     with different option to choose by users. 
     
 ## Technologies Used
@@ -170,11 +170,11 @@ Wireframes were made using [Moqups](https://moqups.com).
     2. As a remote server for another user to see the code used in the project.
     3. For users to view the deployed version of the website. The deployed version can be viewed [here!](https://github.com/MarzDell/worldofrecipes)
 - #### [MongoDB](https://www.mongodb.com/)
-    - **MongoDB** was used as the NoSqldatabase for the storage of user data(recipe).
+    - **MongoDB** was used as the NoSql database for the storage of user data(recipe).
 - #### [Python3](https://www.python.org/downloads/)
     - **Python3** was used to compile and utilise the logic for the project.
 - #### [Flask](https://flask.palletsprojects.com/en/1.0.x/)
-    - **Flask** is a Python web framework usedfor developing web apps.
+    - **Flask** is a Python web framework used for developing web apps.
 - #### [Heroku](https://www.heroku.com/)
     - **Heroku** This is a cloud platform where the project is deployed to. The website can be viewed [here!](https://worldofrecipes.herokuapp.com/)
 
@@ -245,4 +245,4 @@ Images were downloaded from the webpage [Pinterest](https://www.pinterest.co.uk/
 
 - Spencer Barriball (spence_mentor) - For discussing ideas, providing help with project and any ideas related to the project. 
     As well offering me help outside of mentor sessions if I will need anything or if i have an issue that I cannot solve by myself.
-- Slack app that whenever I needed help or tips I could check on app.
+- Slack app that whenever I needed help or tips, I could check on app.
