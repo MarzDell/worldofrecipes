@@ -8,7 +8,7 @@ from pymongo import TEXT
 
 app = Flask(__name__)
 app.config['MONGO_DBNAME'] = 'recipe_manager'
-app.config['MONGO_URI'] = 'mongodb+srv://Cat:Kot@myfirstcluster-tlipu.mongodb.net/recipe_manager?retryWrites=true&w=majority'
+app.config['MONGO_URI'] = os.environ.get('MONGO_URI')
 
 mongo = PyMongo(app)
 
