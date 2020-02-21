@@ -2,7 +2,7 @@
 
 <div class='container' style='line-height: 20px;'>
     <div class='view-image'>
-        <img src="{{ recipe.img }}" alt='card_image' id='img_responsive' style='height: 150px; width:100%; border: solid 5px #ddd; margin-top: 30px;'></img>
+        <img src="{{ recipe.img }}" alt='card_image' id='img_responsive' style='width:100%; border: solid 5px #ddd; margin-top: 30px;'></img>
     </div>
     <h3 class='center-align'>{{ recipe.title }}</h3><br>
     <div class="{{url_for('insert', recipe_id=recipe._id) }}" method='POST' class='col s12'>
